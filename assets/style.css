@@ -1,11 +1,55 @@
-body {
-    display: flex;
-    flex-direction: column;
+* {
+    box-sizing: border-box;
 }
 
-li {
+body {
+    display: inline;
+}
+
+nav {
+    position: absolute;
+    left: 200px;
+    width: 100%;
+}
+
+nav ul {
+    padding-left: 0;
+}
+
+nav li {
+    display: inline-block;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+}
+
+main {
     display: flex;
+    position: absolute;
     flex-direction: column;
-    justify-content: space-between;
-    
+    left: 200px;
+    top: 10%;
+    text-align: left;
+}
+
+main p {
+    margin-right: 25px;
+}
+
+.work {
+    padding: 10px;
+    width: 600px;
+    height: 100px;
+}
+
+#resume{
+    height: 500px;
+    width: 300px;
+}
+
+Aside {
+    position: fixed;
+    text-align: right;
+    width: 200px;
+    padding-right: 20px;
 }
