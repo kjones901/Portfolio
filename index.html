@@ -7,37 +7,38 @@
     <link rel="stylesheet" href="Assets/style.css">
 </head>
 
+ <!-- Left Fixed Column -->
+<aside>
+     <div>
+        <h1>Kyle Jones</h1>
+        <p>801.564.2460</p>
+        <p>kjones901@gmail.com</p> 
+     </div>     
+</aside>
+
+ 
 <!-- Body -->
 <body>
     <!-- Nav Bar -->
     <nav>
-        <ul>
-            <li>About Me</li>
-            <li>My Work</li>
-            <li>Resume</li>
-        </ul>
+        <a href="#about-me">About Me</a>
+        <a href="#my-work">My Work</a>
+        <a href="#resume">Resume</a>
     </nav>
-
-    <!-- Left Fixed Column -->
-   <aside>
-    <h1>Kyle Jones</h1>
-    <!-- <h3>Reach Me</h3> -->
-    <p>801.564.2460</p>
-    <p>kjones901@gmail.com</p>      
-    </aside>
 
     <!-- Main Content -->
     <main>
-        <section>
+        <section id="about-me">
         <h2>About Me</h2>
-        <p>This will be a paragraph about me.---------------------------------
-            ------------------------------------------------------------------
-            ------------------------------------------------------------------
-            ------------------------------------------------------------------
+        <img id="profilepic" src="Assets/profile.jpg" alt="A personal profile picture">
+        <p>This will be a paragraph about me.--------------------------------<br>
+            --------------------------------------------------------------------------<br>
+            --------------------------------------------------------------------------<br>
+            --------------------------------------------------------------------------<br>
         </p>
         </section>
 
-        <section>
+        <section id="my-work">
         <h2>My Work</h2>
         <img class="work" src="Assets/image-1.png" alt="Future Content">
         <img class="work" src="Assets/image-1.png" alt="Future Content">
@@ -45,9 +46,9 @@
         <img class="work" src="Assets/image-1.png" alt="Future Content">
         </section>
 
-        <section>
+        <section id="resume">
         <h2>Resume</h2>
-        <img id="resume" src="Assets/image-2.png" alt="My work Resume">
+        <img id="resumeimg" src="Assets/image-2.png" alt="My work Resume">
         </section>
     </main>
 
