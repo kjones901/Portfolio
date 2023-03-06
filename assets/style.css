@@ -1,6 +1,4 @@
 * {
-    /* box-sizing: border-box; */
-    text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -11,8 +9,6 @@
 }
 
 body {
-    display: inline-block;
-    text-decoration: none;
     background-image: linear-gradient(rgb(243, 241, 241), var(--grey));
 }
 
@@ -22,26 +18,25 @@ nav {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    justify-content: center;
     margin-left: 200px;
     background-color: var(--dark);
     border-color: var(--dark);
     border-width: 5px;
-    border-style: solid;
     border-radius: 50px 50px 15px 0px;
+    border-style: solid;
 }
 
 nav h1 { 
-    position: relative;
-    display: block;
     width: 100%;
     font-size: 60px;
     line-height: 0;
     color: var(--grey);
+    letter-spacing: 20px;
     
 }
 
 nav a {
+    text-decoration: none;
     flex: 10 0 20px;
     padding: 10px;
     font-size: 130%;
@@ -64,8 +59,6 @@ nav a:active {
 
 /* Main Content */
 main {
-    position: relative;
-    text-align: center;
     margin-left: 200px;
     padding: 10px;
     border-width: 0;
@@ -77,32 +70,57 @@ main {
 
 main h2{
     text-align: left;
-    
+    padding: 10px;
+    font-size: 30px;
 }
 
-#profilepic{
-    display: inline-block;
-    width: 150px;
-    border-radius: 15px;
-}
 
 main p {
     display: inline-block;
     text-align: left;
     margin-right: 25px;
     margin-left: 20px;
-
 }
 
-.work {
+
+#my-work {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#mywork:hover {
+    background-color: var(--light);
+}
+
+#primary {
+    flex: 10 0 100;
     padding: 10px;
-    width: 600px;
-    height: 100px;
+    margin: 10px;
+    width: 100%;
+    height: 300px;
+    background-color: var(--light);
 }
 
-#resume-img {
-    height: 500px;
-    width: 300px;
+.secondary {
+    flex: 10 0 45%;
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+    height: 100px;
+    background-color: var(--light);
+}
+
+#resume div {
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    font-size: large;
+    width: 75%;
+    height: 900px;
+    border: 5px;
+    border-style: solid;
+    border-color: var(--dark);
+    background-color: rgb(175, 194, 180);
 }
 
 /* Left Fixed Column */
@@ -112,6 +130,12 @@ aside {
     width: 165px;
     padding-right: 10px;
     height: 100%;
+}
+
+#profilepic{
+    display: inline-block;
+    width: 150px;
+    border-radius: 15px;
 }
 
 footer {
@@ -160,5 +184,6 @@ footer li {
     footer {
         display: contents;
         margin-left: 0;
+        
     }
   }
