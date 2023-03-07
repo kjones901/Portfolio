@@ -72,8 +72,8 @@ main h2{
     text-align: left;
     padding: 10px;
     font-size: 30px;
+    text-decoration: overline;
 }
-
 
 main p {
     display: inline-block;
@@ -82,32 +82,61 @@ main p {
     margin-left: 20px;
 }
 
-
 #my-work {
     display: flex;
     flex-wrap: wrap;
 }
 
-#mywork:hover {
-    background-color: var(--light);
+#primary img:hover {
+    opacity: 1;
+}
+
+#primary a {
+    width: 100%;
+    margin: 1px;
+    border: 3px;
+    border-style: solid;
+    border-color: var(--light);
+}
+
+#primary img {
+    width: 100%;
+    height: 100%;
+    opacity: 80%;
 }
 
 #primary {
-    flex: 10 0 100;
-    padding: 10px;
+    display: flex;
     margin: 10px;
     width: 100%;
     height: 300px;
-    background-color: var(--light);
+}
+
+.secondary img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    opacity: 80%;
+}
+
+.secondary a {
+    width: 100%;
+    border: 3px;
+    margin: 1px;
+    border-style: solid;
+    border-color: var(--light);
 }
 
 .secondary {
-    flex: 10 0 45%;
-    padding: 10px;
+    display: flex;
     margin: 10px;
-    width: 50%;
+    width: 100%;
     height: 100px;
-    background-color: var(--light);
+}
+
+.secondary img:hover {
+    opacity: 1;
 }
 
 #resume div {
@@ -153,6 +182,15 @@ footer li {
     display: none;
 }
 
+.github {
+    color: black;
+    text-decoration: none;
+}
+
+.github:hover {
+    color: var(--light);
+}
+
 
 @media screen and (max-width: 768px) {
     nav a {
@@ -187,3 +225,4 @@ footer li {
         
     }
   }
+
