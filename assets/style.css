@@ -1,55 +1,228 @@
 * {
-    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+:root {
+    --dark: rgb(9, 51, 9);
+    --light: rgb(57, 85, 57);
+    --grey: rgb(221, 221, 221);
 }
 
 body {
-    display: inline;
+    background-image: linear-gradient(rgb(243, 241, 241), var(--grey));
 }
 
+
+/* Nav Bar */
 nav {
-    position: absolute;
-    left: 200px;
-    width: 100%;
-}
-
-nav ul {
-    padding-left: 0;
-}
-
-nav li {
-    display: inline-block;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 15px;
-}
-
-main {
     display: flex;
-    position: absolute;
-    flex-direction: column;
-    left: 200px;
-    top: 10%;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: 200px;
+    background-color: var(--dark);
+    border-color: var(--dark);
+    border-width: 5px;
+    border-radius: 50px 50px 15px 0px;
+    border-style: solid;
+}
+
+nav h1 { 
+    width: 100%;
+    font-size: 60px;
+    line-height: 0;
+    color: var(--grey);
+    letter-spacing: 20px;
+    
+}
+
+nav a {
+    text-decoration: none;
+    flex: 10 0 20px;
+    padding: 10px;
+    font-size: 130%;
+    margin-bottom: 4px;
+    margin-right: 5px;
+    border-radius: 5px;
+    color: var(--grey);
+    border-style: solid;
+    border-width: 2px;
+}
+
+nav a:hover {
+    background-color: var(--light);
+}
+
+nav a:active {
+    font-size: 135%;
+    box-shadow: 0 0 5px inset;
+}
+
+/* Main Content */
+main {
+    margin-left: 200px;
+    padding: 10px;
+    border-width: 0;
+    border-left: 5px;
+    border-style: solid;
+    border-image: linear-gradient(var(--dark), grey) 1 100%;
+    line-height: 100%;
+}
+
+main h2{
     text-align: left;
+    padding: 10px;
+    font-size: 30px;
+    text-decoration: overline;
 }
 
 main p {
+    display: inline-block;
+    text-align: left;
     margin-right: 25px;
+    margin-left: 20px;
 }
 
-.work {
-    padding: 10px;
-    width: 600px;
+#my-work {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#primary img:hover {
+    opacity: 1;
+}
+
+#primary a {
+    width: 100%;
+    margin: 1px;
+    border: 3px;
+    border-style: solid;
+    border-color: var(--light);
+}
+
+#primary img {
+    width: 100%;
+    height: 100%;
+    opacity: 80%;
+}
+
+#primary {
+    display: flex;
+    margin: 10px;
+    width: 100%;
+    height: 300px;
+}
+
+.secondary img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    opacity: 80%;
+}
+
+.secondary a {
+    width: 100%;
+    border: 3px;
+    margin: 1px;
+    border-style: solid;
+    border-color: var(--light);
+}
+
+.secondary {
+    display: flex;
+    margin: 10px;
+    width: 100%;
     height: 100px;
 }
 
-#resume{
-    height: 500px;
-    width: 300px;
+.secondary img:hover {
+    opacity: 1;
 }
 
-Aside {
+#resume div {
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    font-size: large;
+    width: 75%;
+    height: 900px;
+    border: 5px;
+    border-style: solid;
+    border-color: var(--dark);
+    background-color: rgb(175, 194, 180);
+}
+
+/* Left Fixed Column */
+aside {
     position: fixed;
     text-align: right;
-    width: 200px;
-    padding-right: 20px;
+    width: 165px;
+    padding-right: 10px;
+    height: 100%;
 }
+
+#profilepic{
+    display: inline-block;
+    width: 150px;
+    border-radius: 15px;
+}
+
+footer {
+    margin-left: 170px;
+    list-style-type: none;
+    display: none;
+}
+
+footer li {
+    display: inline-block;
+    padding: 5px;
+}
+
+#contact {
+    display: none;
+}
+
+.github {
+    color: black;
+    text-decoration: none;
+}
+
+.github:hover {
+    color: var(--light);
+}
+
+
+@media screen and (max-width: 768px) {
+    nav a {
+        flex: 100 0 50%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #contact {
+        display: flex;
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    aside {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 0;
+    }
+
+
+    footer {
+        display: contents;
+        margin-left: 0;
+        
+    }
+  }
+
