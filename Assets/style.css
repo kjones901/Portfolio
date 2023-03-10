@@ -100,7 +100,7 @@ main p {
     margin: 1px;
     border: 3px;
     border-style: solid;
-    background-image: url("/Assets/site1.png");
+    background-image: url("./Assets/site1.png");
     border-color: var(--light);
     border-radius: 25px;
     color: var(--grey);
@@ -126,7 +126,7 @@ main p {
     border: 3px;
     border-style: solid;
     margin: 1px;
-    background-image: url("/Assets/site2.png");
+    background-image: url("./Assets/site2.png");
     border-color: var(--light);
     border-radius: 15px;
     color: var(--grey);
