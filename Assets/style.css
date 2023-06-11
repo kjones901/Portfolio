@@ -118,7 +118,7 @@ main p {
     display: flex;
     margin: 10px;
     width: 100%;
-    height: 100px;
+    height: 150px;
 }
 
 .secondary a {
@@ -126,7 +126,7 @@ main p {
     border: 3px;
     border-style: solid;
     margin: 1px;
-    background-image: url("../Assets/site2.png");
+    background-image: url("../Assets/remindmelogo.PNG");
     border-color: var(--light);
     border-radius: 15px;
     color: var(--grey);
